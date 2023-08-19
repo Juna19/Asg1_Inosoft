@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   height: 100vh;
   display: flex;
@@ -12,10 +13,13 @@ body {
   justify-content: center;
   background: #4c4d50;
 }
+.submit{
+  color: cornflowerblue;
+}
 .container {
   position: relative;
   max-width: 300px;
-  width: 100%;
+  width: 150%;
   border-radius: 12px;
   padding: 10px 20px 20px;
   background: #7e7e7e;
@@ -24,13 +28,17 @@ body {
 .display {
   height: 80px;
   width: 100%;
-  outline: none;
+  outline: 0;
   border: none;
   text-align: right;
   margin-bottom: 10px;
   font-size: 25px;
   color: #000e1a;
-  pointer-events: none;
+  cursor: pointer;
+}
+
+display ::placeholder{
+  color: #000e1a;
 }
 .buttons {
   display: grid;
@@ -45,9 +53,8 @@ body {
   cursor: pointer;
   background-color: #2f292e;
 }
-.buttons button:active {
-  transform: scale(0.99);
-}
+
 .operator {
+  display: contents;
   color: #ffffff;
 }
